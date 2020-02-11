@@ -16,43 +16,52 @@
 </script>
 
 <style>
-.grid-container {
-  display: grid;
-  height: 400px;
-  align-content: center;
-  grid-template-columns: auto auto auto ;
-  grid-gap: 1px;
-  padding: 0px;
-}
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.445);
+ ul {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+     column-count: 3;
+   }
+
+.footer {
+   
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color:Black;
   text-align: center;
-  padding: 20px;
-  font-size: 1em;
 }
 
-a:link {
-  color: green;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+ 
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 200px;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
 }
 
-/* mouse over link */
-a:hover {
-  color: red;
-}
-
-/* selected link */
-a:active {
-  color: yellow;
-} 
-
-a{
-    text-decoration: none;
+ 
+li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
 }
 
 </style>
@@ -66,21 +75,25 @@ a{
 
 
 <div class="grid-container">
-        <div><a href="nepali">Arabic</a></div>
-  <div><a href="">Japanese</a></div>
-  <div><a href="nepali">Nepali नेपाली</a> </div>  
-  <div><a href="nepali">Bangla</a></div>
-  <div>Korean</div>
-  <div>Russian</div>  
-  <div>Farsi</div>
-  <div>Kurdish</div>  
-  <div>Tamil</div>
-  <div>Greek</div>
-  <div>Malayalam</div>
-  <div>Thai</div>  
-  <div>Hindi</div>  
-  <div>Marathi</div>  
-  <div>Urdu</div>  
+  <ul>
+  
+    <li><a href="">Arabic</li>	
+    <li><a href="bangla" title="Type Bangla Online">Bangla</a></li>	
+    <li><a href="farsi">Farsi</a></li>
+    <li><a href="farsi">Hindi</a></li>
+    <li><a href="japanese">Japanese</a></li>
+    <li id="korean"><a href="korean">Korean</a></li>
+    <li><a href="malyalam">Malayalam</li>
+    <li><a href="marathi">Marathi</a></li>
+    <li><a href="nepali">Nepali</a></li>
+    <li><a href="russian">Russian</a></li>
+    <li id="tamil"><a href="tamil">Tamil</a></li>
+    <li><a href="thai">Thai</a></li>	
+    <li><a href="urdu">Urdu</a></li>
+    <li><a href="kurdish">Kurdish</a></li>
+    <li><a href ="greek">Greek</a></li>
+ 
+ </ul>    
   
  
 
@@ -90,8 +103,9 @@ a{
 
 
 <div class="footer">
-    This is Footer
+  Hello World !
 </div>
+
 
 
 </body>
